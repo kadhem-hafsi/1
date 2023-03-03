@@ -1,0 +1,60 @@
+{
+  "departement": [
+    {
+      "id": 1,
+      "matricule": 1,
+      "domaine": "francais",
+      "nb_employer": 100,
+      "max_salaire": 1000
+    },
+    {
+      "matricule": 2,
+      "domaine": "arabic",
+      "nb_employer": 500,
+      "max_salaire": 500,
+      "id": 3
+    },
+    {
+      "max_salaire": 2000,
+      "nb_employer": 500,
+      "domaine": "info",
+      "matricule": 3,
+      "id": 2
+    },
+    {
+      "max_salaire": 1000,
+      "nb_employer": 100,
+      "matricule": 4,
+      "domaine": "biologie",
+      "id": 10
+    },
+    {
+      "matricule": 6,
+      "domaine": "hydrolique",
+      "id": 12,
+      "nb_employer": 1500,
+      "max_salaire": 1500
+    },
+    {
+      "matricule": 12,
+      "domaine": "mecanique",
+      "id": 13,
+      "nb_employer": 500,
+      "max_salaire": 1500
+    },
+    {
+      "matricule": 15,
+      "domaine": "informatique",
+      "nb_employer": 200,
+      "max_salaire": 100,
+      "id": 14
+    },
+    {
+      "matricule": 2,
+      "domaine": "informatique",
+      "id": 15,
+      "nb_employer": 200,
+      "max_salaire": 5000
+    }
+  ]
+}

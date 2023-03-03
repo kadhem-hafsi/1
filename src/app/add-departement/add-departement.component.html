@@ -1,0 +1,34 @@
+<div class="container">
+    <form #f="ngForm">
+        <div>
+            <label>matricule</label>
+            <input type="number" name="matricule" [(ngModel)]="departemen.matricule" #e="ngModel">
+        </div>
+            <div>
+                <label >domaine</label>
+                <select  name="domaine" required  [(ngModel)]="departemen.domaine" #n="ngModel">
+                    <option value="informatique">informatique</option>
+                    <option value="RH">RH</option>
+                    <option value="finance">finance</option>
+                </select>
+                    <div *ngIf="n.touched && n.invalid">
+                        <div *ngIf="n.errors?.['required']" >is required</div>
+                    </div>
+            </div>
+            <div>
+                <label>nb_employer</label>
+                <input type="number" name="nb_employer" min="10" required [(ngModel)]="departemen.nb_employer" #nb="ngModel">
+                <div *ngIf="nb.touched && nb.invalid">
+                    <div *ngIf="nb.errors?.['min']" >minimun nb est 10</div>
+                    <div *ngIf="nb.errors?.['required']" >is required</div>
+                </div>
+            </div>
+            <div>
+                <label>max_salaire</label>
+                <input type="number" name="max_salaire" min="10"  [(ngModel)]="departemen.max_salaire">
+            </div>
+            <div>
+                <input type="submit" value="ajouter"  (click)="adddep()" [disabled]="f.invalid">
+            </div>
+    </form>
+    </div>
